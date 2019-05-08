@@ -60,3 +60,19 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+####################################################################
+#####                         IoT Gems                         #####
+####################################################################
+
+# The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web
+gem 'bootstrap'
+
+# A gem to automate using jQuery with Rails
+gem 'jquery-rails'
+
+# Ruby conversion of RPi.GPIO Python module
+# gem 'rpi_gpio'
+
+# Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic
+gem 'slim'
