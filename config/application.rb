@@ -15,5 +15,18 @@ module IotDashboard
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    ####################################################################
+    #####                   GPIO Initialization                    #####
+    ####################################################################
+
+    # RPi::GPIO.set_numbering :bcm
+    # RPi::GPIO.setup 21, as: :output, initialize: :low
+    #
+    # # Resetting GPIO settings
+    # at_exit do
+    #   puts '[IotDashboard] Cleaning up all pins and resetting the selected numbering mode.'
+    #   RPi::GPIO.reset
+    # end
   end
 end
