@@ -1,4 +1,4 @@
 class DashboardController < ApplicationController
-  def menu
+  def main
   end
 end
