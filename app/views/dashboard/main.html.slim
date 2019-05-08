@@ -1,2 +1,18 @@
-div
-  h1 Welcome!
+div.jumbotron
+  h1.display-4 Welcome Aboard!
+  p.lead
+    | This is a simple
+    '
+    strong IoT Dashboard
+    | . Simple functionality is provided for showing pretty basic but fun implementations.
+  hr.my-4
+  p
+    | It uses the
+    '
+    strong>= link_to 'rpi_gpio', 'https://github.com/ClockVapor/rpi_gpio'
+    | gem, which is the Ruby conversion of the
+    '
+    strong>= link_to 'RPi.GPIO Python', 'https://pypi.org/project/RPi.GPIO/'
+    | module.
+
+= render 'cards'
