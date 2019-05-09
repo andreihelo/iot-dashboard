@@ -1,5 +1,17 @@
-div
-  h1 Light Control
-  = link_to 'Turn ON', light_on_path
-  br
-  = link_to 'Turn OFF', light_off_path
+.jumbotron
+  h1.display-4 Light Control
+  p.lead
+    | Control one light from the
+    '
+    strong Internet!
+
+input#side.side checked='checked' type='checkbox' /
+.onoff
+  span.off OFF
+  span.on ON
+label.front for='side'
+.wall
+.switchplate
+  .screw.top &ndash;
+  .screw.bottom &ndash;
+.switch
