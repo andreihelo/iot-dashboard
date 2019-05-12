@@ -1,17 +1,22 @@
 class LightController < ApplicationController
-  def menu
+  # Renders the switch plate view
+  def switch_plate
   end
 
   def on
-    flash.now[:success] = 'The light has been turned <strong>ON</strong>!'.html_safe
-    puts '[IotDashboard] Turning the light on.'
+    message = '[IotDashboard] Turning the light on.'
+    puts message
     # flash.now You turned OFF the light
     # RPi::GPIO.set_high 21
+
+    render status: 200, json: { message: message }
   end
 
   def off
-    flash.now[:alert] = 'The light has been turned <strong>OFF</strong>!'.html_safe
-    puts '[IotDashboard] Turning the light off.'
+    message = '[IotDashboard] Turning the light off.'
+    puts message
     # RPi::GPIO.set_low 21
+
+    render status: 200, json: { message: message }
   end
 end

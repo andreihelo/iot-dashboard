@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   root 'dashboard#main'
 
   # Light actions
-  get '/light',     to: 'light#menu'
-  get '/light/on',  to: 'light#on'
-  get '/light/off', to: 'light#off'
+  get '/light', to: 'light#switch_plate'
+  # Defaults only to JSON responses
+  defaults format: :json do
+    get '/light/on',  to: 'light#on'
+    get '/light/off', to: 'light#off'
+  end
 end
