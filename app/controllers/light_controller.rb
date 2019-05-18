@@ -6,8 +6,7 @@ class LightController < ApplicationController
   def on
     message = '[IotDashboard] Turning the light on.'
     puts message
-    # flash.now You turned OFF the light
-    # RPi::GPIO.set_high 21
+    RPi::GPIO.set_high 21
 
     render status: 200, json: { message: message }
   end
@@ -15,7 +14,7 @@ class LightController < ApplicationController
   def off
     message = '[IotDashboard] Turning the light off.'
     puts message
-    # RPi::GPIO.set_low 21
+    RPi::GPIO.set_low 21
 
     render status: 200, json: { message: message }
   end

@@ -72,7 +72,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 
 # Ruby conversion of RPi.GPIO Python module
-# gem 'rpi_gpio'
+gem 'rpi_gpio'
 
 # Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic
 gem 'slim'

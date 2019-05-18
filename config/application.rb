@@ -20,13 +20,13 @@ module IotDashboard
     #####                   GPIO Initialization                    #####
     ####################################################################
 
-    # RPi::GPIO.set_numbering :bcm
-    # RPi::GPIO.setup 21, as: :output, initialize: :low
-    #
-    # # Resetting GPIO settings
-    # at_exit do
-    #   puts '[IotDashboard] Cleaning up all pins and resetting the selected numbering mode.'
-    #   RPi::GPIO.reset
-    # end
+    RPi::GPIO.set_numbering :bcm
+    RPi::GPIO.setup 21, as: :output, initialize: :low
+
+    # Resetting GPIO settings
+    at_exit do
+      puts '[IotDashboard] Cleaning up all pins and resetting the selected numbering mode.'
+      RPi::GPIO.reset
+    end
   end
 end
