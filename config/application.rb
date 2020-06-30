@@ -22,6 +22,7 @@ module IotDashboard
 
     RPi::GPIO.set_numbering :bcm
     RPi::GPIO.setup 21, as: :output, initialize: :low
+    RPi::GPIO.setup 16, as: :output, initialize: :low
 
     # Resetting GPIO settings
     at_exit do

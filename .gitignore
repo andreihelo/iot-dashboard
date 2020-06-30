@@ -32,3 +32,9 @@
 
 # Ignore RubyMine project config
 .idea/
+
+# Ignore MacOS files
+.DS_Store
+
+# Ignore application configuration
+/config/application.yml

@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   defaults format: :json do
     get '/light/on',  to: 'light#on'
     get '/light/off', to: 'light#off'
+
+    post 'youtube/super_chat', to: 'youtube#super_chat'
   end
 end

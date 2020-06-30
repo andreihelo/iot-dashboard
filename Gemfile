@@ -76,3 +76,6 @@ gem 'rpi_gpio'
 
 # Slim is a template language whose goal is to reduce the syntax to the essential parts without becoming cryptic
 gem 'slim'
+
+# Simple Rails app configuration
+gem 'figaro'
