@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     get '/light/off', to: 'light#off'
 
     post 'youtube/super_chat', to: 'youtube#super_chat'
+    post 'youtube/super_shot', to: 'youtube#super_shot'
   end
 end
